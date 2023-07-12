@@ -1,0 +1,11 @@
+* {
+	letter-spacing: 0.3px;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#search-box:hover {
+	box-shadow: 0 0 15px 0 #dbeafe;
+}
