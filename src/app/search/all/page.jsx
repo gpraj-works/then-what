@@ -15,7 +15,7 @@ const page = () => {
 	const { data, error, isLoading } = useSearch(query, startIndex);
 	const results = data?.items;
 	const searchInfo = data?.searchInformation;
-	// console.log(results && results[0].pagemap.cse_thumbnail[0].src)
+	console.log(data)
 	return (
 		<>
 			<title>{query}</title>
