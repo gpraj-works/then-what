@@ -25,7 +25,7 @@ const SearchBox = () => {
 				</div>
 				<div className='w-3/6'>
 					<div className='relative'>
-						<form name='byText' onSubmit={SearchByText}>
+						<form id='byText' onSubmit={SearchByText}>
 							<input
 								type='text'
 								onChange={(e) => updateText(e.target.value)}

@@ -15,6 +15,7 @@ const page = () => {
 	const { data, error, isLoading } = useSearch(query, startIndex);
 	const results = data?.items;
 	const searchInfo = data?.searchInformation;
+	// console.log(results && results[0].pagemap.cse_thumbnail[0].src)
 	return (
 		<>
 			<title>{query}</title>
@@ -30,7 +31,7 @@ const page = () => {
 					<div className='px-40'>
 						<SearchInfo info={searchInfo} />
 						{results.map((result, index) => (
-							<div key={index} className='py-4'>
+							<div key={ index } className='py-4'>
 								<div className='group inline-flex flex-col'>
 									<Link href={result.link} className='text-sm'>
 										{result.formattedUrl}
@@ -49,7 +50,7 @@ const page = () => {
 						))}
 					</div>
 				)}
-				<div className='px-40 py-10'>{!isLoading && <Pagination />}</div>
+				<div className='px-40 pt-6 mb-10'>{!isLoading && <Pagination category={'all'}/>}</div>
 			</div>
 			{!isLoading && <Footer />}
 		</>
