@@ -12,7 +12,7 @@ This is a simple search engine built using Next.js 13, SWR, Axios, and Tailwind 
 
 You can access the live demo of this search engine at [thenwhat.vercel.app](https://thenwhat.vercel.app).
 
-![Search Engine Screenshot](https://tinyurl.com/2kdbr4m9)
+![Search Engine Screenshot](https://raw.githubusercontent.com/gpraj-works/then-what/main/public/Then-what-.png)
 
 ## Technologies Used
 
