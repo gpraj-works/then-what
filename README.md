@@ -1,62 +1,64 @@
-# Search Engine with Next.js 13, SWR, and Axios
+# Search Engine with Next.js 13, SWR, Axios, and Tailwind CSS
 
-This is a simple search engine web application built using Next.js 13, SWR, and Axios. It allows users to search for information and displays the search results in a user-friendly manner.
-
-## Demo
-
-A live demo of the application can be found at [thenwhat.vercel.app](https://thenwhat.vercel.app).
+This is a simple search engine built using Next.js 13, SWR, Axios, and Tailwind CSS. The search engine retrieves search results from an external API and displays them in a user-friendly interface.
 
 ## Features
 
-- **Search functionality:** Users can enter their search query and obtain relevant search results.
-- **Real-time data fetching:** The application uses SWR (stale-while-revalidate) library to provide real-time data fetching, ensuring that the displayed results are always up to date.
-- **HTTP requests:** Axios library is utilized for making HTTP requests to retrieve search results from the backend API.
-- **Responsive design:** The application is built with responsiveness in mind, allowing users to access and use it on various devices.
+- Search functionality: Enter a search query and get relevant search results.
+- Real-time results: Results are displayed instantly as you type, thanks to SWR (stale-while-revalidate) data fetching.
+- Responsive design: The interface is designed to adapt to different screen sizes, providing a seamless experience on desktop and mobile devices.
 
-## Installation
+## Live Demo
 
-To run this application locally, follow these steps:
-
-1. Clone this repository to your local machine.
-
-```bash
-git clone https://github.com/your-username/your-repo.git
-```
-
-2. Navigate to the project directory.
-
-```bash
-cd your-repo
-```
-
-3. Install the dependencies.
-
-```bash
-npm install
-```
-
-4. Run the development server.
-
-```bash
-npm run dev
-```
-
-5. Open your browser and visit [http://localhost:3000](http://localhost:3000) to access the application.
-
-## Screenshots
+You can access the live demo of this search engine at [thenwhat.vercel.app](https://thenwhat.vercel.app).
 
 ![Search Engine Screenshot](https://tinyurl.com/2kdbr4m9)
 
 ## Technologies Used
 
-- [Next.js 13](https://nextjs.org/) - A React framework for building server-side rendered and static websites.
-- [SWR](https://swr.vercel.app/) - A React Hooks library for data fetching.
-- [Axios](https://axios-http.com/) - A promise-based HTTP client for making API requests.
+This project utilizes the following technologies:
 
-## Contributing
+- **Next.js 13**: A React framework for building server-side rendered (SSR) and statically generated (SSG) applications.
+- **SWR**: A React data fetching library that provides real-time data fetching with automatic caching, revalidation, and error handling.
+- **Axios**: A popular JavaScript library for making HTTP requests from the browser or Node.js.
+- **Tailwind CSS**: A utility-first CSS framework that helps in rapidly building custom designs.
 
-Contributions are welcome! If you encounter any issues or have suggestions for improvements, please feel free to submit a pull request or open an issue on the [GitHub repository](https://github.com/your-username/your-repo).
+## Installation
+
+To run this project locally, follow these steps:
+
+1. Clone the repository: `git clone https://github.com/your-username/search-engine.git`
+2. Navigate to the project directory: `cd search-engine`
+3. Install the dependencies: `npm install`
+4. Start the development server: `npm run dev`
+5. Open your browser and visit `http://localhost:3000`
+
+Make sure you have Node.js and npm (Node Package Manager) installed on your machine before proceeding with the installation.
+
+## Configuration
+
+To configure the search engine, you can modify the following files:
+
+- `src/pages/index.js`: Update the API endpoint to fetch search results from your desired source.
+- `tailwind.config.js`: Customize the Tailwind CSS configuration according to your preferences.
+
+## Feedback and Contributions
+
+Feedback and contributions are always welcome! If you have any suggestions, bug reports, or feature requests, please open an issue on the GitHub repository.
+
+If you would like to contribute to this project, you can:
+
+- Fork the repository
+- Create a new branch
+- Make your changes
+- Commit your changes
+- Push the branch
+- Open a pull request
 
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
+
+---
+
+Thank you for checking out this search engine project! We hope you find it useful and easy to customize for your own needs. If you have any further questions, feel free to reach out.
